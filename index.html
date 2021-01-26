@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG By Hand</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+      }
+      svg {
+        stroke: currentColor;
+        stroke-width: 2;
+        border: 1px solid lightgray;
+        width: 256px;
+        height: 256px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .ham {
+        stroke-width: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 24 24">
+      <line x1="2" y1="4.2" x2="22" y2="4.2" />
+      <line x1="2" y1="9.4" x2="16" y2="9.4" />
+      <line x1="2" y1="14.6" x2="22" y2="14.6" />
+      <line x1="2" y1="19.8" x2="16" y2="19.8" />
+    </svg>
+    <svg viewBox="0 0 24 24" class="ham">
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <line x1="4" y1="18" x2="20" y2="18" />
+    </svg>
+    <svg viewBox="0 0 24 24" class="poly">
+      <polyline points="3 8, 3 4, 21 4, 21 8" />
+      <line x1="12" y1="4" x2="12" y2="20" />
+      <line x1="8" y1="20" x2="16" y2="20" />
+    </svg>
+    <svg viewBox="0 0 24 24" class="circle">
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="13 7, 13 14, 9 14" />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16" />
+      <line x1="4" y1="10" x2="20" y2="10" />
+      <line x1="7" y1="3" x2="7" y2="7" />
+      <line x1="17" y1="3" x2="17" y2="7" />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="
+      M 8 8
+      v 8
+      m 8 0
+      v -8
+      "
+      />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="
+      M 2 2
+      h 20
+      v 20
+      h -20
+      z"
+      />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="
+      M 22 12
+      a 10 10 0 0 0 -10 -10
+      "
+      />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="
+      M 4 4 
+      h 16
+      a 2 2 0 0 1 2 2 
+      v 14
+      a 2 2 0 0 1 -2 2 
+      h -16
+      a 2 2 0 0 1 -2 -2 
+      v -14
+      a 2 2 0 0 1 2 -2 
+      M 7 2 
+      v 4
+      M 17 2 
+      v 4
+      M 2 10 
+      h 20
+      "
+      />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="
+        M 18 14
+        v 6
+        a 2 2 0 0 1 -2 2
+        H 6
+        a 2 2 0 0 1 -2 -2
+        V 10
+        a 2 2 0 0 1 2 -2
+        H 12
+        M 12 14
+        l 8 -8
+        l -4 0
+        m 4 0
+        l 0 4
+      "
+      />
+    </svg>
+  </body>
+</html>
